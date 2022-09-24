@@ -25,10 +25,8 @@ def transf_list(): # преобразование строки в список
     global znak
     znak = 1
     if input_expres[0] == '-':
-        print('------ ',input_expres)
         input_expres = input_expres[1:]
         znak = -1
-    print(input_expres)
 
     for i in oper:
        input_expres = input_expres.replace(i, f'${i}$')
